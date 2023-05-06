@@ -1430,15 +1430,38 @@
 
                                 <pre>
 <code class="language-liquid">
-sudo apt-get install xfce4
+sudo apt update
+sudo apt install xfce4 xfce4-goodies
 </code>
                                 </pre>
                                 <pre>
-<code class="language-liquid">
-sudo apt-get install xfce4-goodies
-</code>
+<code class="language-liquid">sudo apt install tightvncserver</code>
                                 </pre>
-
+                                                                <pre>
+<code class="language-liquid">tightvncserver</code>
+                                </pre>
+                                
+                                <pre>
+<code class="language-liquid">tightvncserver -kill :1</code>
+                                </pre>
+                                <pre>
+<code class="language-liquid">#!/bin/sh
+xrdb $HOME/.Xresources
+startxfce4 &</code>
+                                </pre>
+                                 <pre>
+<code class="language-liquid">tightvncserver</code>
+</pre>
+ <pre>
+<code class="language-liquid">
+sudo apt-get remove --purge gnome-terminal
+sudo apt-get install gnome-terminal</code>
+</pre>
+                                
+                                <pre>
+<code class="language-liquid">
+sudo gnome-terminal</code>
+</pre>
                             </div>
                             <footer class="single-footer container medium">
 
