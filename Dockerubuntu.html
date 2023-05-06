@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Docker上的电脑</title>
+  <style>
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.5;
+      background-color: #fff;
+      background-color: #f5f5f5;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 14px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+    
+    button {
+      background-color: #007aff;
+      border: none;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    pre {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+    <h2>注册账号</h2>
+    <p>
+        首先免<a href="https://hub.docker.com/signup" target="_self" title="费注册一个 Docker 账号" accesskey="p">费注册一个 Docker 账号</a>，用户登录创建实例
+    </p>
+
+
+    <h2>登录使用</h2>
+<p>注册完成之后，首先免<a href="https://labs.play-with-docker.com/" target="_self" title="登录 Play With Docker" accesskey="p">登录 Play With Docker</a>，用户登录创建实例，接着按视频操作复制粘贴即可
+提示：为避免资源滥用，每次登录限时四小时，用于注册账号和浏览网页足够。
+</p>
+  <div class="container">
+    
+    <button id="copyButton" onclick="copyCode()" style="float: right;">复制代码</button>
+    <pre id="codeBlock">
+mkdir /root/ubuntu && cd /root/ubuntu
+    </pre>
+  </div>
+  <script>
+    function copyCode() {
+      var codeBlock = document.getElementById("codeBlock");
+      var range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+
+
+<div class="container">
+    
+    <button id="copyButton1" onclick="copyCode1()" style="float: right;">复制代码</button>
+    <pre id="codeBlock1">
+apk add nano
+    </pre>
+  </div>
+  <script>
+    function copyCode1() {
+      var codeBlock = document.getElementById("codeBlock1");
+      var range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+
+
+<div class="container">
+    
+    <button id="copyButton2" onclick="copyCode2()" style="float: right;">复制代码</button>
+    <pre id="codeBlock2">
+nano docker-compose.yml</pre>
+  </div>
+  <script>
+    function copyCode2() {
+      var codeBlock = document.getElementById("codeBlock2");
+      var range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+
+
+
+<div class="container">
+    
+    <button id="copyButton3" onclick="copyCode3()" style="float: right;">复制代码</button>
+    <pre id="codeBlock3">
+version: '3.5'
+
+services:
+    ubuntu-xfce-vnc:
+        container_name: xfce
+        image: imlala/ubuntu-xfce-vnc-novnc:latest
+        shm_size: "2gb"
+        ports:
+            - 5555:5900
+            - 6666:6080
+        environment: 
+            - VNC_PASSWD=shopifyisfine
+            - GEOMETRY=1920x1080
+            - DEPTH=24
+        volumes: 
+            - ./Downloads:/root/Downloads
+        restart: unless-stopped
+</pre>
+  </div>
+  <script>
+    function copyCode3() {
+      var codeBlock = document.getElementById("codeBlock3");
+      var range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+
+
+<div class="container">
+    
+    <button id="copyButton4" onclick="copyCode4()" style="float: right;">复制代码</button>
+    <pre id="codeBlock4">
+docker-compose up -d
+</pre>
+  </div>
+  <script>
+    function copyCode4() {
+      var codeBlock = document.getElementById("codeBlock4");
+      var range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+
+<div class="container">
+    
+    <button id="copyButton5" onclick="copyCode5()" style="float: right;">复制代码</button>
+    <pre id="codeBlock5">
+Aa2023
+</pre>
+  </div>
+  <script>
+    function copyCode5() {
+      var codeBlock = document.getElementById("codeBlock5");
+      var range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>arm64 安装chromium</title>
+  <style>
+    body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.5;
+      background-color: #fff;
+      background-color: #f5f5f5;
+      font-family: "Helvetica Neue", sans-serif;
+      font-size: 14px;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+    
+    button {
+      background-color: #007aff;
+      border: none;
+      color: #fff;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    pre {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+    <h2>arm64 ubuntu主机安装chromium</h2>
+    <p>
+       谷歌浏览器至今没有推出ARM64版，如果你需要使用selenium跑浏览器自动化脚本，只有安装chromium 
+    </p>
+
+
+
+  <div class="container">
+    
+    <button id="copyButton" onclick="copyCode()" style="float: right;">复制代码</button>
+    <pre id="codeBlock">
+sudo apt update && sudo apt install snapd
+    </pre>
+  </div>
+  <script>
+    function copyCode() {
+      var codeBlock = document.getElementById("codeBlock");
+      var range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+
+<div class="container">
+    
+    <button id="copyButton1" onclick="copyCode1()" style="float: right;">复制代码</button>
+    <pre id="codeBlock1">
+sudo snap install chromium
+    </pre>
+  </div>
+  <script>
+    function copyCode1() {
+      var codeBlock = document.getElementById("codeBlock1");
+      var range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges();
+      window.getSelection().addRange(range);
+      document.execCommand("copy");
+      window.getSelection().removeAllRanges();
+    }
+  </script>
+
+</body>
+</html>
