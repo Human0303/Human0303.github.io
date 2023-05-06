@@ -1441,17 +1441,10 @@
                                     </li>
                                     <li>提示：为避免资源滥用，每次登录限时四小时，用于注册账号和浏览网页足够。</li>
                                 </ul>
-                                <pre>
-<code class="language-liquid">mkdir /root/ubuntu &amp;&amp;cd /root/ubuntu</code>
-                                </pre>
-                                <pre>
-<code class="language-liquid">apk add nano</code>
-                                </pre>
-                                <pre>
-<code class="language-liquid">nano docker-compose.yml</code>
-                                </pre>
-                                <pre>
-<code class="language-liquid">
+<pre><code class="language-liquid">mkdir /root/ubuntu &amp;&amp;cd /root/ubuntu</code></pre>
+<pre><code class="language-liquid">apk add nano</code></pre>
+<pre><code class="language-liquid">nano docker-compose.yml</code></pre>
+<pre><code class="language-liquid">
 version: '3.5'
 
 services:
@@ -1468,23 +1461,20 @@ services:
             - DEPTH=24
         volumes: 
             - ./Downloads:/root/Downloads
-        restart: unless-stopped</code>
-                                </pre>
+        restart: unless-stopped</code></pre>
+                                
                                 <div class="kg-card kg-callout-card kg-callout-card-grey">
                                     <div class="kg-callout-emoji">💡</div>
                                     <div class="kg-callout-text">提示：粘贴之后按 Ctrl + X，再按 Y，接着按回车键进行保存</div>
                                 </div>
                                 <pre>
-<code class="language-liquid">docker-compose up -d</code>
-                                </pre>
+<code class="language-liquid">docker-compose up -d</code> </pre>
                                 <p>打开 6666 端口，登录密码：</p>
-                                <pre>
-<code class="language-liquid">Aa2023</code>
-                                </pre>
+                                
+                                <pre><code class="language-liquid">Aa2023</code></pre>
                             
                                                                 <pre>
-<code class="language-liquid">docker exec -it xfce /bin/bash</code>
-                                </pre>
+<code class="language-liquid">docker exec -it xfce /bin/bash</code></pre>
 
                             </div>
                             <footer class="single-footer container medium">
