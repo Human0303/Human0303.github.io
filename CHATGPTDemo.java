@@ -7,7 +7,7 @@ import java.net.URL;
 
 public class ChatGPTDemo {
     public static void main(String[] args) {
-        String apiKey = "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"; // 将 YOUR_API_KEY 替换为您的 ChatGPT API 密钥
+        String apiKey = ""; // 将 YOUR_API_KEY 替换为您的 ChatGPT API 密钥
         String apiUrl = "https://api.openai.com/v1/chat/completions";
 
         try {
