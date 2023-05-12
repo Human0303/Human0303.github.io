@@ -17,7 +17,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array(
     'Content-Type: application/json',
-    'Authorization: Bearer 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' // 将 YOUR_API_KEY 替换为您的 ChatGPT API 密钥
+    'Authorization: Bearer ' // 将 YOUR_API_KEY 替换为您的 ChatGPT API 密钥
 ));
 
 $response = curl_exec($ch);
